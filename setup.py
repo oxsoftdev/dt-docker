@@ -9,5 +9,6 @@ setup(
     , url='https://github.com/oxsoftdev/dt-docker'
     , license='LICENSE.txt'
     , install_requires=['docker']
+    , include_package_data=True
 )
 
