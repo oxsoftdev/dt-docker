@@ -1,0 +1,9 @@
+FROM ubuntu
+
+WORKDIR /usr/src
+
+COPY ./assets /usr/src/_assets
+
+RUN . /usr/src/_assets/scripts/mssql-python-pyodbc.sh
+RUN pip install --user --no-cache-dir -r /usr/src/_assets/python-requirements
+
