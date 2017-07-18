@@ -1,18 +1,16 @@
 import logging
 
+from ._ContainerMixin import ContainerMixin
 from ..metaclasses.Singleton import Singleton
 
 logger = logging.getLogger('dt-docker')
 
 
-class RedisContainer:
+class RedisContainer(ContainerMixin):
 
     def __init__(self, client, name):
         self.client = client
         self.name = name
-
-    def get(self):
-        return self.client.containers.get(self.name)
 
     def run(self, port, environment=None):
         try:
