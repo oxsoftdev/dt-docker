@@ -87,7 +87,7 @@ class MssqlContainer(ContainerMixin, metaclass=Singleton):
     def _exec_sql_scripts(self):
         for sql_script in self.sql_scripts:
             with open(os.path.join(self._src, sql_script)) as f:
-                self.exec_sql(f.read(), sql_script)
+                self._exec_sql_script(f.read(), sql_script)
 
     def _connect_network(self, network):
         self.client.networks.get(network).connect(self.name)
