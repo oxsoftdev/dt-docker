@@ -1,4 +1,4 @@
-from ..metaclasses.Singleton import Singleton
+from ..metaclasses import Singleton
 
 
 class NetworkManager(metaclass=Singleton):

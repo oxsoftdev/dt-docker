@@ -1,7 +1,7 @@
 import os
 
 from constants import BASEPATH
-from ..metaclasses.Singleton import Singleton
+from ..metaclasses import Singleton
 
 
 class ImageManager(metaclass=Singleton):

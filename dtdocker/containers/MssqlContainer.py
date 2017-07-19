@@ -4,7 +4,7 @@ import logging
 
 from constants import BASEPATH
 from ._ContainerMixin import ContainerMixin
-from ..metaclasses.Singleton import Singleton
+from ..metaclasses import Singleton
 
 logger = logging.getLogger('dt-docker')
 
