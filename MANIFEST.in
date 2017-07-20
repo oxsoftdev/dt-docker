@@ -1,1 +1,1 @@
-_assets/*
+recursive-include _assets *
