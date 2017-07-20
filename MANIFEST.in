@@ -1,1 +1,1 @@
-recursive-include _assets *
+recursive-include dtdocker/_assets *
