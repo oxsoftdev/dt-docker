@@ -1,6 +1,6 @@
 import os
 
-from constants import BASEPATH
+from ..constants import BASEPATH
 from ..metaclasses import Singleton
 
 
