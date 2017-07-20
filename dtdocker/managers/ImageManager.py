@@ -28,9 +28,8 @@ class ImageManager(metaclass=Singleton):
             'rm': True
         })
 
-    def _pull_image(image):
+    def _pull_image(self, image):
         self.client.images.pull(image)
 
-    def _build_custom_image(config):
+    def _build_custom_image(self, config):
         self.client.images.build(**config)
-
